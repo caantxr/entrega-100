@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kanit&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'kanit'
+}
+body{
+    background-image:url(../media/img/palm-tree-2445107_1920.jpg);
+}
+.header{
+    display: flex;
+    background:transparent;
+    justify-content:flex-end;
+    align-items: center;
+    height: 5rem;
+    width: auto;
+}
+.header .logo{
+    cursor: pointer;
+}
+.header .nav-links{
+    list-style: none;
+}
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+.header .nav-links a{
+    font-size: 700;
+    text-decoration: none;
+}
+.header a .btn{
+    font-weight: 700;
+    background: white;
+    border: none;
+
+}
