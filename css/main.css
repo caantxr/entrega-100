@@ -1,38 +1,85 @@
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Kanit&display=swap');
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family:'kanit'
 }
-body{
-    background-image:url(../media/img/palm-tree-2445107_1920.jpg);
+.section-1{
+    background-image: url(../media/img/palm-tree-2445107_1920.jpg);
 }
-.header{
-    display: flex;
-    background:transparent;
-    justify-content:flex-end;
-    align-items: center;
-    height: 5rem;
-    width: auto;
-}
-.header .logo{
-    cursor: pointer;
-}
-.header .nav-links{
-    list-style: none;
-}
-.header .nav-links li{
-    display: inline-block;
-    padding: 0 20px;
-}
-.header .nav-links a{
-    font-size: 700;
-    text-decoration: none;
-}
-.header a .btn{
-    font-weight: 700;
-    background: white;
-    border: none;
 
+.header{
+    position:sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 32px;
+    /* color:white; */
+    text-decoration: none;
+    font-weight: 400px;
+}
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    /* color: aliceblue; */
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 40px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height:2px;
+    background: wheat;
+    transition: .3s;
+}
+.navbar a:hover::before {
+    width: 100%;
+}
+
+/* FIN NAVBAR */
+.presentation-section-1{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 60px;
+}
+.presentation-textbox{
+    color: white;
+}
+
+.presentation-image{
+    width: 40%;
+}
+
+/* SECTION 1 */
+
+.carrousel-1{
+    background-color: brown;
+}
+.services-container{
+    background-color: bisque;
+}
+.membership-container{
+    background-color: blue;
+}
+.carrousel-2{
+    background-image: url(../media/img/pexels-jibarofoto-3101521.jpg);
+}
+.fac-container{
+    background-color: blueviolet;
+}
+.footer-container{
+    background-color: pink;
 }
